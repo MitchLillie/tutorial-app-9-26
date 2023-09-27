@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "tutorial-app-9-26"
+client_id = "fe6033625c2c0a97774df61ba72b85bc"
+application_url = "https://tops-rouge-enters-assets.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://tops-rouge-enters-assets.trycloudflare.com/auth/callback",
+  "https://tops-rouge-enters-assets.trycloudflare.com/auth/shopify/callback",
+  "https://tops-rouge-enters-assets.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-07"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "mitchs-treats-store.myshopify.com"
